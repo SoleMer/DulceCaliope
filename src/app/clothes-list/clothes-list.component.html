@@ -9,24 +9,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td><img [src]="clothes.image" [alt]="clothes.name"></td>
-            <td>{{clothes.name}}</td>
-            <td>{{clothes.size}}</td>
-            <td>{{clothes.price}}</td>
-            <td>{{clothes.stock}}</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr *ngFor="let prenda of prendas">
+            <td><img [src]="prenda.image" [alt]="prenda.name"></td>
+            <td>{{prenda.name}}</td>
+            <td>{{prenda.size}}</td>
+            <td>{{prenda.price | currency}}</td>
+            <td *ngIf="prenda.stock==0">Sin Stock</td>
+            <td *ngIf="!prenda.stock==0">Disponible</td>
         </tr>
     </tbody>
 </table>
