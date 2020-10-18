@@ -4,4 +4,5 @@ export interface Prenda {
     price: number;
     stock: number;
     image: string;
+    quantity: number;
 }
