@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { Module } from 'module';
 import { Prenda } from './Prenda';
 
 @Component({

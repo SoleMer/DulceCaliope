@@ -5,11 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClothesListComponent } from './clothes-list/clothes-list.component';
 import { FormsModule } from '@angular/forms';
+import { DulceCaliopeAboutComponent } from './dulce-caliope-about/dulce-caliope-about.component';
+import { DulceCaliopePrendasComponent } from './dulce-caliope-prendas/dulce-caliope-prendas.component';
+import { CartComponent } from './cart/cart.component';
+import { DulceCaliopeInfoComponent } from './dulce-caliope-info/dulce-caliope-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClothesListComponent
+    ClothesListComponent,
+    DulceCaliopeAboutComponent,
+    DulceCaliopePrendasComponent,
+    CartComponent,
+    DulceCaliopeInfoComponent
   ],
   imports: [
     BrowserModule,
