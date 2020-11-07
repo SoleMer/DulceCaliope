@@ -9,8 +9,7 @@ import { ItemInfo } from './itemInfo';
 
 export class DulceCaliopeInfoComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  } 
 
   items: ItemInfo[] =[
     {

@@ -18,11 +18,7 @@
             <td *ngIf="prenda.stock==0">Sin Stock</td>
             <td *ngIf="!prenda.stock==0">Disponible</td>
             <td>
-                <div class="input-group">
-                    <button class="btn-primary" (click)="downQuantity(prenda)">-</button>
-                    <input type="text" [(ngModel)]="prenda.quantity" (keyup)="onChancgeQuantity($event, prenda)">
-                    <button class="btn-primary" (click)="upQuantity(prenda)">+</button>
-                </div>
+                <app-input-integer [(quantity)]="prenda.quantity" [max]="prenda.stock" *ngIf="!prenda.stock==0" (maxReached)="maxReached($event)"></app-input-integer>
             </td>
         </tr>
     </tbody>

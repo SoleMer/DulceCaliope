@@ -9,6 +9,7 @@ import { DulceCaliopeAboutComponent } from './dulce-caliope-about/dulce-caliope-
 import { DulceCaliopePrendasComponent } from './dulce-caliope-prendas/dulce-caliope-prendas.component';
 import { CartComponent } from './cart/cart.component';
 import { DulceCaliopeInfoComponent } from './dulce-caliope-info/dulce-caliope-info.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DulceCaliopeInfoComponent } from './dulce-caliope-info/dulce-caliope-in
     DulceCaliopeAboutComponent,
     DulceCaliopePrendasComponent,
     CartComponent,
-    DulceCaliopeInfoComponent
+    DulceCaliopeInfoComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,

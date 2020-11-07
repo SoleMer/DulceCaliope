@@ -10,6 +10,6 @@ export class DulceCaliopePrendasComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
+  } 
 
 }
