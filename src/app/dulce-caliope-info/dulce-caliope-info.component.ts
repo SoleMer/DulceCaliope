@@ -8,8 +8,6 @@ import { ItemInfo } from './itemInfo';
 })
 
 export class DulceCaliopeInfoComponent implements OnInit {
-  ngOnInit(): void {
-  } 
 
   items: ItemInfo[] =[
     {
